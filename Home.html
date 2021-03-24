@@ -65,7 +65,7 @@ body {font-family: "Lato", sans-serif}
             <p><b>Logo</b></p>
             <p class="w3-opacity">Have in 4 days!</p>
             <p>Just let us know what your Logo is for and we can deliver a logo perfect for your business!</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Now!</button>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('insert').style.display='block'">Buy Now!</button>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
@@ -74,7 +74,7 @@ body {font-family: "Lato", sans-serif}
             <p><b>Photo correction/Resteration</b></p>
             <p class="w3-opacity">Have in 3 days!</p>
             <p>Have a photo that is almost perfect! Send it to us and we will remove any unwanted details or blemishes and send it right back!</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Now!</button>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('insert').style.display='block'">Buy Now!</button>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
@@ -83,7 +83,7 @@ body {font-family: "Lato", sans-serif}
             <p><b>Illustration</b></p>
             <p class="w3-opacity">Have in 1 week!</p>
             <p>We can create an illustration based on a concept or reference photo of your choice!</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Now!</button>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('insert').style.display='block'">Buy Now!</button>
           </div>
         </div>
       </div>
@@ -91,21 +91,42 @@ body {font-family: "Lato", sans-serif}
   </div>
 
   <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
+  <div id="insert" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
       <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+        <span onclick="document.getElementById('insert').style.display='none'" 
        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Book</h2>
       </header>
       <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+	  
+	  
+	  
+	      <form action="insert.php" method="post">
+
+       <label for="Customer Name">Customer Name:</label>
+
+           
+			 <input class="w3-input w3-border" type="text"  name="Customer Name" id="Customer Name" placeholder="Kevin Molloy">
+
+     
+        
+            <label for="Request">Request</label>
+
+        
+			
+			 <input class="w3-input w3-border" type="text" name="Request" id="Request" placeholder="Details of what is required">
+
+     
+    <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">Send <i class="fa fa-check"></i></button>
+        <input type="submit" value="Submit">
+
+    </form>
+	  
+	  
+	  
+       
+        
       </div>
     </div>
   </div>
@@ -113,12 +134,12 @@ body {font-family: "Lato", sans-serif}
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <p class="w3-opacity w3-center"><i>Questions? Drop a note!</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> Galway, Ireland<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +0873 457 832<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: FarTooGraphic@gmail.com<br>
       </div>
       <div class="w3-col m6">
         <form action="/action_page.php" target="_blank">
@@ -151,11 +172,11 @@ body {font-family: "Lato", sans-serif}
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
 </footer>
 
 <script>
-// Automatic Slideshow - change image every 4 seconds
+
 var myIndex = 0;
 carousel();
 
