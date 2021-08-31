@@ -13,7 +13,7 @@ if (!$conn) {
 
 // Escape user inputs for security
 
-$Customer Name = $_POST['Customer Name'];
+$CustomerName = $_POST['CustomerName'];
 
 $Request = $_POST['Request'];
 
@@ -22,7 +22,7 @@ $Request = $_POST['Request'];
 
 // attempt insert query execution
 
-mysqli_query($conn, "INSERT INTO logo ($Customer Name, Request) VALUES ('$Customer Name', '$Request')");
+mysqli_query($conn, "INSERT INTO logo (CustomerName, Request) VALUES ('$CustomerName', '$Request')");
 
 if(mysqli_affected_rows($conn)>0){
 
