@@ -5,55 +5,71 @@
     <head>
 
     <meta charset="UTF-8">
-
-    <title>Insert Customer Details </title>
-
-
-
-
-<link rel="stylesheet" href="stylesheet1.css">
-
-<header>
-<ul> <div class="nav">
-<li>  <a href="Home.html">home</a></li>
- <li> <a class="active" 
-	href="select.php">select</a></li>
 	
- <li> <a href="insert.html">insert</a></li>
-<li>  <a href="DELETEDB.php">delete</a></li>
-  </ul>
-</div>
-</header>
+	<link rel="stylesheet" href="stylesheet11.css">
 
 
-    </head>
-    <title>Insert Customer Details </title>
+<br>
+
+    <title>Insert Patient Name </title>
+
+
+
     <body>
 
-    <form action="insert.php" method="post">
 
-       <label for="Customer Name">Customer Name:</label>
 
-            <input type="text" name="Customer Name" id="CustomerName">
 
-      <br>
+<header>
+  <h2>Make Appointment </h2>
+</header>
 
-            <label for="CustomerNumber">CustomerNumber:</label>
+<section>
+  <nav>
+  
+    <ul>
+      <li>  <a href="Home.html">Home</a></li>
+ <li> <a class="active"
+	href="select.php">View Appointments</a></li>
+	
+ <li> <a href="insert.html">Make Appointment </a></li>
+<li>  <a href="DELETEDB.php">Cancel Appointments</a></li>
 
-            <input type="text" name="CustomerNumber" id="CustomerNumber">
+    </ul>
+  </nav>
+  <center>
+  <article>
+    <h1>Appointment</h1>
+	
+	    <form action="insert.php" method="post">
 
-      <br>
-        
-            <label for="Request">Request</label>
+       <label for="PatientName">PatientName:</label>
 
-            <input type="text" name="Request" id="Request">
+            <input type="text" name="PatientName" id="patientname">
+			<br>
+		<label for="appointment">Appointment:</label>
 
-     
+            <input type="text" name="Appointment" id="Appointment">
+			<br>
+			
+			
+	 <label for="specialist">Specialist:</label>
+
+            <input type="text" name="Specialist" id="specialist">
+
+  <br>
 
         <input type="submit" value="Submit">
 
     </form>
+	</center>
+  </article>
+</section>
 
-    </body>
+<footer>
+  <p>Dr Mary Mulcahy's dental practice</p>
+</footer>
 
-    </html>
+</body>
+</html>
+
